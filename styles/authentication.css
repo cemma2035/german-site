@@ -102,3 +102,27 @@
 .comp-reg .left-side{
     /* background-image: linear-gradient(to bottom, black,rgba(215,0,0,0.7), rgba(248,200,0,0.7)), url("../Images/airplane-wing.jpg"); */
 }
+#err_email{
+    color: red;
+    font-size: 10px;
+}
+#err_pwd{
+    color: red;
+    font-size: 10px;
+}
+#err_verify{
+    color: red;
+    font-size: 10px;
+}
+#success{
+    position: absolute;
+    z-index: 101;
+    top: 30;
+    left: 0;
+    right: 0;
+    color:#ffffff;
+    text-align: center;
+    line-height: 2.5;
+    overflow: hidden; 
+    animation-delay: 1s; animation-duration: 0.2s;
+}
