@@ -8,20 +8,16 @@ function sign_up(event){
     const email = document.getElementById('userEmail').value;
     const password = document.getElementById('userPwd').value;
     const confirm = document.getElementById('confirmPwd').value; 
-    const phone = 08104668626;
-    const gender =  "male";
 
     fetch('https://sims2019api.herokuapp.com/api/register', {
 
-        headers: {"Content-Type": "application/json" },
+        headers: {'Content-Type': 'application/json' },
         method: 'POST',
         body: JSON.stringify({
             full_name: name,
             email: email,
             password: password,
             password_confirmation: confirm,
-            gender: gender,
-            phone: phone
     })
     }).then((res) => res.json())
     .then((data) => {
@@ -34,11 +30,15 @@ function sign_up(event){
             if(data.message){
                 document.getElementById('success').innerText = data.message;
             }
+            if(data.success){
+                window.location.replace('verification.html')
+            }
             setTimeout( () => {
-                document.getElementById('err_email').style.display = "none";
-                document.getElementById('err_pwd').style.display = "none";
-                document.getElementById('success').style.display = "none";      
-            }, 6000)          
+                document.getElementById('err_email').style.display = 'none';
+                document.getElementById('err_pwd').style.display = 'none';
+                document.getElementById('success').style.display = 'none';      
+            }, 6000)   
+        console.log(data)       
     })
     .catch((err) => console.log(err))
 }

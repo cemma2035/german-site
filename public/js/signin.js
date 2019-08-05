@@ -7,12 +7,9 @@ function Sign_in(event){
     const email = document.getElementById('userEmail').value;
     const password = document.getElementById('userPwd').value;
 
-   console.log(email, password);
-  
+    fetch('https://sims2019api.herokuapp.com/api/login', {
 
-    fetch("https://sims2019api.herokuapp.com/api/login", {
-
-        headers: {"Content-Type": "application/json" },
+        headers: {'Content-Type': 'application/json' },
         method: 'POST',
         body: JSON.stringify({
           email,
@@ -30,13 +27,17 @@ function Sign_in(event){
         if(data.message){
             document.getElementById('success').innerText = data.message;
         }
+        if(data.token){
+            const gaol = data.token;
+            localStorage.setItem('token', `${gaol}`);
+        }
         if(data.verified){
-            window.location.replace("/dashboard.html")
+            // window.location.replace('completeregistration.html')
         }
         setTimeout( () => {
-            document.getElementById('err_email').style.display = "none";
-            document.getElementById('err_pwd').style.display = "none";
-            document.getElementById('success').style.display = "none";      
+            document.getElementById('err_email').style.display = 'none';
+            document.getElementById('err_pwd').style.display = 'none';
+            document.getElementById('success').style.display = 'none';      
         }, 6000) 
         console.log(data)
     })
