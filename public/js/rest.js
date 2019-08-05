@@ -1,28 +1,25 @@
+document.getElementById('token_reset').addEventListener('submit', token_reset);
 
-document.getElementById('sign_up').addEventListener('submit', sign_up);
-
-function sign_up(event){
+function token_reset(event){
     event.preventDefault();
 
-    const name = document.getElementById('userFullName').value;
-    const email = document.getElementById('userEmail').value;
-    const password = document.getElementById('userPwd').value;
+    const token = document.getElementById('user_token').value;
+    const password = document.getElementById('newPwd').value;
     const confirm = document.getElementById('confirmPwd').value; 
 
-    fetch('https://sims2019api.herokuapp.com/api/register', {
+    fetch('https://sims2019api.herokuapp.com/api/reset', {
 
         headers: {'Content-Type': 'application/json' },
-        method: 'POST',
+        method: 'PUT',
         body: JSON.stringify({
-            full_name: name,
-            email: email,
+            token: token,
             password: password,
             password_confirmation: confirm,
     })
     }).then((res) => res.json())
     .then((data) => {
-            if (data.email){
-                document.getElementById('err_email').innerText = data.email;       
+            if (data.token){
+                document.getElementById('err_token').innerText = data.token;       
             } 
             if(data.password){
                 document.getElementById('err_pwd').innerText = data.password;
@@ -31,10 +28,10 @@ function sign_up(event){
                 document.getElementById('success').innerText = data.message;
             }
             if(data.success){
-                window.location.replace('verification.html')
+                window.location.replace('Signin.html')
             }
             setTimeout( () => {
-                document.getElementById('err_email').style.display = 'none';
+                document.getElementById('err_token').style.display = 'none';
                 document.getElementById('err_pwd').style.display = 'none';
                 document.getElementById('success').style.display = 'none';      
             }, 6000)   
