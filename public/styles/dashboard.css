@@ -1,0 +1,45 @@
+.dash-body{
+    min-height: 90vh;
+}
+.dash-right{
+    min-height: 90vh;
+}
+.main-blocks{
+    height: 35vh;
+}
+.block-name{
+    height: 20%;
+}
+.block-image div{
+    height: 24vh;
+}
+.join-group{
+    background-image: url(../Images/join-class.svg);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.timetable-block{
+    background-image: url(../Images/timetable.svg);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.exams-block{
+    background-image: url(../Images/exams.svg);
+
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tasks-block{
+    background-image: url(../Images/tasks.svg);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.dash-body .list-group-item:hover{
+    background-color: darkgrey;
+    cursor: pointer;
+    border-radius: 5px;
+}
