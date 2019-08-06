@@ -32,7 +32,7 @@ function Sign_in(event){
             localStorage.setItem('token', `${gaol}`);
         }
         if(data.verified){
-            // window.location.replace('completeregistration.html')
+            window.location.replace('enroll.html')
         }
         setTimeout( () => {
             document.getElementById('err_email').style.display = 'none';
