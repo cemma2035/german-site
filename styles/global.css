@@ -97,3 +97,13 @@ input:not(:focus):valid ~ .floating-label {
 .bolder{
   font-weight: bolder;
 }
+.german-lang-btn{
+  border: none;
+  box-shadow: 0;
+  border-radius: 0px;
+}
+.english-lang-btn{
+  border-radius: 0px;
+  border: none;
+  box-shadow: 0;
+}

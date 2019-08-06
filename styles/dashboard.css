@@ -19,21 +19,26 @@
     background-position: center;
     background-repeat: no-repeat;
 }
-.profile-block{
-    background-image: url(../Images/profile.svg);
-    background-size: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.settings-block{
-    background-image: url(../Images/settings.svg);
+.timetable-block{
+    background-image: url(../Images/timetable.svg);
     background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
 }
-.cbt-block{
-    background-image: url(../Images/cbt.svg);
+.exams-block{
+    background-image: url(../Images/exams.svg);
     background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
+}
+.tasks-block{
+    background-image: url(../Images/tasks.svg);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.dash-body .list-group-item:hover{
+    background-color: darkgrey;
+    cursor: pointer;
+    border-radius: 5px;
 }
