@@ -1,8 +1,8 @@
 .auth-body{
     height: 100vh;
-    background-image: linear-gradient(to bottom, black,rgba(215,0,0,0.7), rgba(248,200,0,0.7)), url("../Images/airplane-wing.jpg");
+    /* background-image: linear-gradient(to bottom, black,rgba(215,0,0,0.7), rgba(248,200,0,0.7)), url("../Images/airplane-wing.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center; */
 }
 /* .img-side{
     height: 100%;
@@ -89,7 +89,8 @@
     border-radius: 0;
 }
 .upload-photo{
-    height: 18vh;
+    height: 20vh;
+    width: 20vh;
     border-radius: 50%;
 }
 .upload-photo:hover{
@@ -101,6 +102,9 @@
 }
 .comp-reg .left-side{
     /* background-image: linear-gradient(to bottom, black,rgba(215,0,0,0.7), rgba(248,200,0,0.7)), url("../Images/airplane-wing.jpg"); */
+}
+.sim-tabs .nav-link{
+    color: grey;
 }
 #err_email{
     color: red;
