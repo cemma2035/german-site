@@ -1,0 +1,16 @@
+.german-lang-con{
+    height: 60vh;
+}
+.data-boxes{
+    height: 18vh;
+}
+.data-box-body{
+    height: 7vh;
+}
+.data-box-body p{
+    font-size: 12px;
+}
+.data-box-button button{
+    height: 3vh;
+    font-size: 10px;
+}
