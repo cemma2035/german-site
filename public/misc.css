@@ -1,0 +1,38 @@
+#german-lang-tab{
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url("images/studying.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.german-lang-con{
+    height: 75vh;
+}
+.data-boxes{
+    height: 22vh;
+    border-radius: 5px;
+    background-color: white;
+}
+.page-title{
+    color: white;
+}
+.data-box-body{
+    height: 10vh;
+}
+.data-box-body p{
+    font-size: 12px;
+}
+.data-box-button button{
+    height: 3vh;
+    font-size: 10px;
+}
+.btn-black{
+    background-color: black;
+    color: white;
+}
+.btn-red{
+    background-color: red;
+    color: white;
+}
+.btn-yellow{
+    background-color: yellow;
+    color: black;
+}
