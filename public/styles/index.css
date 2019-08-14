@@ -1,0 +1,20 @@
+.index-body{
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)),url("../Images/index-bg.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+.links-con{
+    margin-top: 40vh;
+}
+.index-links{
+    color: white;
+    font-weight: bolder;
+}
+.index-links:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.brand-nav{
+    background-color: inherit;
+}
