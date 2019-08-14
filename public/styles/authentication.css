@@ -1,8 +1,8 @@
 .auth-body{
-    height: 100vh;
-    /* background-image: linear-gradient(to bottom, black,rgba(215,0,0,0.7), rgba(248,200,0,0.7)), url("../Images/airplane-wing.jpg");
+    height:90.8vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url("../Images/german-building-flag.jpeg");
     background-size: cover;
-    background-position: center; */
+    background-position: center;
 }
 /* .img-side{
     height: 100%;
