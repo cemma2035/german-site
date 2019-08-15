@@ -1,0 +1,133 @@
+.slides{
+    height: 80vh;
+}
+.carousel-inner h2{
+    padding-top:35vh;
+    color:white;
+}
+.first-slide{
+    height: 80vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url("../Images/collab.jpg");
+    background-position: center;
+    background-size: cover;
+    animation: bg-zoom 3s linear forwards;
+}
+.second-slide{
+    height: 80vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url("../Images/slide-2.jpg");
+    background-position: center;
+    background-size: cover;
+    animation: bg-zoom 3s linear forwards;
+}
+.third-slide{
+    height: 80vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url("../Images/slide-3.jpg");
+    background-position: center;
+    background-size: cover;
+    animation: bg-zoom 3s linear forwards;
+}
+@keyframes bg-zoom{
+    0% {background-size: cover}
+    25% {background-size: 105%}
+    50% {background-size: 110%}
+    75% {background-size: 115%}
+    100% {background-size: 120%}
+}
+.nav-tabs-con{
+    min-height: 50vh;
+}
+.german-lang-tab {
+    height: 45vh;
+    border-radius: 10px;
+    position: relative;
+    background-image: url("../Images/for-language.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.german-lang-tab:hover{
+    animation: bg-zoom 1s linear forwards;
+}
+.enroll-blog-login{
+    height: 45vh;
+}
+.enroll-tab{
+    height: 21vh;
+    border-radius: 10px;
+    background-image: url("../Images/for-enroll.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.enroll-tab:hover{
+    animation: bg-zoom 1s linear forwards;
+}
+.blog-tab{
+    height: 21vh;
+    border-radius: 10px;
+    background-image: url("../Images/for-blog.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.blog-tab:hover{
+    animation: bg-zoom 1s linear forwards;
+}
+.login-tab{
+    height: 21vh;
+    border-radius: 10px;
+    background-image: url("../Images/for-login.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.login-tab:hover{
+    animation: bg-zoom 1s linear forwards;
+}
+.results-tab{
+    height: 25vh;
+    border-radius: 10px;
+    background-image: url("../Images/for-results.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.results-tab:hover{
+    animation: bg-zoom 1s linear forwards;
+}
+.tab-identify{
+    height: 4vh;
+    min-width: 5vw;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+}
+.tab-identify a{
+    color: white;
+    text-decoration: none;
+}
+.gallery{
+    height: 20vh;
+    border: 1px solid black;
+}
+.page-footer{
+    color: white;
+    min-height: 50vh;
+    background-color: darkslateblue;
+}
+.footer-rest{
+    height: 40vh;
+}
+.page-footer a{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+.page-footer ul{
+    list-style-type: none;
+    justify-content: flex-start;
+}
+.ul-title{
+    font-weight: bold;
+    font-size: 20px;
+}
