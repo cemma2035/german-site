@@ -1,7 +1,10 @@
 #german-lang-tab{
-    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url("images/studying.jpg");
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url("../Images/studying.jpg");
     background-position: center;
     background-size: cover;
+}
+body{
+    overflow-x: hidden;
 }
 .german-lang-con{
     height: 75vh;
