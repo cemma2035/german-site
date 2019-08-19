@@ -107,3 +107,35 @@ input:not(:focus):valid ~ .floating-label {
   border: none;
   box-shadow: 0;
 }
+/* slick */
+.slider {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.slick-slide {
+margin: 0px 5px;
+}
+
+.slick-slide img {
+width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+color: black;
+}
+
+
+.slick-slide {
+transition: all ease-in-out .3s;
+opacity: .2;
+}
+
+.slick-active {
+opacity: .5;
+}
+
+.slick-current {
+opacity: 1;
+}
