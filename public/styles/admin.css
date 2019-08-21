@@ -1,0 +1,109 @@
+.index-body{
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.links-con{
+    margin-top: 40vh;
+}
+.index-links a {
+    color: rgb(231, 13, 13);
+    font-weight: bolder;
+}
+.navbar-toggler{
+    border: 1px solid #000;
+}
+a{
+    color: black;
+}
+a:hover{
+    color: black;
+}
+.index-links:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.brand-nav{
+    background-color: inherit;
+}
+
+/* section */
+.block {
+   width: 100%;
+}
+.block form{
+    width: 50%;
+    margin: auto;
+    margin-top: 8%;
+    height: 55vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pass input{
+    margin-top: 8%;
+    width: 5%;
+}
+.head{
+    text-align: center;
+    margin-bottom: 5%;
+ }
+.block form .block1 input{
+    width: 100%;
+    margin-top: 5%;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    outline: none;
+    border-bottom: 1px solid;
+    border-bottom-color: rgba(0, 0, 0, 0.644);
+    border-radius: 0px;
+    box-shadow: none;
+}
+.block form button {
+    width: 100%;
+    outline: none;
+    box-shadow: 8px 8px 4px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    margin-bottom: 4%;
+}
+.block form button:hover {
+    background-color: grey;
+    animation: infiniteGradient 1s ease infinite;
+ 
+    background-image: linear-gradient(to bottom right,rgba(215,0,0), rgba(248,200,0));
+}
+.btn-brand-yellow {
+    background-color: #f8c800;
+    color: white;
+}
+.btn-brand-yellow:focus {
+    box-shadow: none;
+}
+.brand-input:focus {
+    box-shadow: none;
+    color: #f8c800;
+    border-bottom-color: #f8c800;
+    text-decoration: none;
+    padding-bottom: 0;
+    line-height: 20px;
+  }
+.brand-form ::placeholder {
+    font-size: 12px;
+}
+.brand-input:focus ~ .floating-label {
+    color: #f8c800;
+}
+.floating-label {
+    position: absolute;
+    pointer-events: none;
+    left: 15px;
+    top: 15px;
+    transition: 0.2s ease all;
+    font-size: 15px;
+}
+input:focus ~ .floating-label,
+  :not(:focus):valid ~ .floating-label {
+    top: 0px;
+    bottom: 10px;
+    font-size: 11px;
+    opacity: 1;
+}
